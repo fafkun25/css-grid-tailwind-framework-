@@ -4,7 +4,7 @@ A high-performance, responsive web design showcase built with **Tailwind CSS** a
 This project serves as a "Developer Cheat Sheet," demonstrating six essential modern web layouts—from the classic Holy Grail to the dynamic Bento Box—all optimized for every device from mobile to desktop.
 
 ## 🚀 Live Demo
-[Insert your GitHub Pages link here, e.g., https://yourusername.github.io/repository-name/]
+https://fafkun25.github.io/css-grid-tailwind-framework-/
 
 ## ✨ Key Features
 * **Intelligent Auto-Grid:** Uses `grid-cols-[repeat(auto-fit,minmax(320px,1fr))]` to magically rearrange cards without complex media queries.
