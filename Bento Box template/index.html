@@ -1,1 +1,136 @@
-temp
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENTO BOX TEMPLATE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</head>
+<body class="flex justify-center items-center flex-col bg-gray-400 mt-4">
+    <header class="flex justify-center flex-col text-center m-4">
+        <h1 class=" text-4xl font-bold m-2">BENTO BOX TEMPLATE </h1>
+        <p class="m-2 text-yellow-200">"Inspired by modern dashboards. Uses varying column and row spans for a sleek, modular look."</p>
+    </header>
+
+    <div class="container grid grid-cols-1 md:grid-cols-3 p-10 gap-4 m-10 text-center">
+            <div class="bg-white/50 border-4 border-solid border-black rounded-2xl text-sm md:text-lg hover:scale-105">
+            <img src="/01 css with tailwind lesson/grids images/bento-box/bentobox-phone.png" class="rounded-lg">
+            <p class="m-1">sm: = 640px</p>
+            <p class="m-1">viewport: 360 x 800</p>
+            <p class="m-1 font-bold text-orange-500" > viewport for mobile screen</p>
+        </div>
+
+        <div class="bg-white/50 border-4 border-solid border-black rounded-2xl text-sm md:text-lg hover:scale-105">
+            <img src="/01 css with tailwind lesson/grids images/bento-box/bentobox-tablet.png" class="rounded-lg">
+            <p class="m-1">md: = 768px</p>
+            <p class="m-1">viewport: 768 x 1024</p>
+            <p class="m-1 font-bold text-orange-500">a viewport for tablet screen</p>
+        </div>
+
+        <div class="bg-white/50 border-4 border-solid border-black rounded-2xl text-sm md:text-lg hover:scale-105">
+            <img src="/01 css with tailwind lesson/grids images/bento-box/bentobox-monitor.png" class="rounded-lg">
+            <p class="m-1">lg: = 1024px</p>
+            <p class="m-1">xl: 1280px (Standard Laptops)<br>
+              2xl: 1536px (Large Monitors)</p>
+            <p class="m-1 font-bold text-orange-500">a viewport for laptop and monitor screen</p>
+        </div>
+
+        <section class=" bg-blue-100 border-l-8 border-blue-500 p-4 m-5 rounded-r-lg">
+            <h2 class="font-bold text-xl mb-2">What it is?</h2>
+            <p class="text-gray-700 italic">A modern, tile-based layout where items have different sizes (some span 2 columns, some span 2 rows). It looks like a Japanese lunch box.</p>
+        </section>  
+
+         <section class="bg-blue-100 border-l-8 border-blue-500 p-4 m-5 rounded-r-lg">
+            <h2 class="font-bold text-xl mb-2">Best used for?</h2>
+            <p class="text-gray-700 italic">Personal portfolios, feature highlights on a landing page, or Apple-style "summary" sections.</p>
+        </section>  
+
+        <section class="bg-blue-100 border-l-8 border-blue-500 p-4 m-5 rounded-r-lg">
+            <h2 class="font-bold text-xl mb-2">Best used for?</h2>
+            <p class="text-gray-700 italic">in any project you like.</p>
+        </section>  
+
+
+
+    </div>
+    <main class="w-full max-w-4xl">
+        <div class="relative group">
+            <button onclick="copyToClipboard(this)" class="absolute top-6 right-8 bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded-md text-sm font-bold shadow-lg transition-all active:scale-95">
+            Copy Code
+        </button>
+        <pre class="whitespace-pre-wrap bg-gray-600 text-white p-4 rounded shadow-inner border-4 m-4 mx-auto  ">
+            <code>
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+    &#x3C;title&#x3E;bento box&#x3C;/title&#x3E;
+    &#x3C;script src=&#x22;https://cdn.tailwindcss.com&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+    &#x3C;div class=&#x22;grid grid-cols-1 md:grid-cols-4 bg-black min-h-screen gap-4 p-4 text-center text-white font-bold text-2xl&#x22;&#x3E;
+        &#x3C;div class=&#x22;md:col-span-4 row-span-1 bg-yellow-500 border-4 border-dashed border-white&#x22;&#x3E;box 1&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;md:col-span-2 md:row-span-2 bg-red-500 border-4 border-dashed border-white flex items-center justify-center min-h-[300px]&#x22;&#x3E;box 2&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;col-span-1 row-span-1 bg-green-500 border-4 border-dashed border-white&#x22;&#x3E;box 3&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;col-span-1 row-span-1 bg-blue-500 border-4 border-dashed border-white&#x22;&#x3E;box 5&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;col-span-1 row-span-1 bg-violet-500 border-4 border-dashed border-white&#x22;&#x3E;box 6&#x3C;/div&#x3E;
+         &#x3C;div class=&#x22;col-span-1 row-span-1 bg-orange-500 border-4 border-dashed border-white&#x22;&#x3E;box 4&#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;md:col-span-4 row-span-1 bg-pink-500 border-4 border-dashed border-white&#x22;&#x3E;box 7&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+            </code>
+        </pre>
+        </div>
+    </main>
+
+
+
+<script>
+function copyToClipboard(button) {
+    // Finds the code element inside the same parent div
+    const codeElement = button.parentElement.querySelector('code');
+    const textToCopy = codeElement.innerText;
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        const originalText = button.innerText;
+        button.innerText = "Copied! ✅";
+        button.classList.replace('bg-orange-500', 'bg-green-600');
+
+        setTimeout(() => {
+            button.innerText = originalText;
+            button.classList.replace('bg-green-600', 'bg-orange-500');
+        }, 2000);
+    });
+}
+</script>  
+
+<footer class="w-full bg-gray-800 text-gray-300 p-8 mt-auto border-t-4 border-gray-700">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6 px-4">
+        
+        <div class="text-center md:text-left">
+            <p class="font-bold text-white text-xl italic tracking-wide">CSS Grid Mastery</p>
+            <p class="text-xs opacity-70">Built with Tailwind CSS for rapid prototyping.</p>
+        </div>
+        
+        <div class="flex gap-6 text-sm">
+            <a href="#" class="hover:text-orange-500 transition-colors">Documentation</a>
+            <a href="#" class="hover:text-orange-500 transition-colors">GitHub Repo</a>
+            <a href="#" class="hover:text-orange-500 transition-colors">Repo</a>
+        </div>
+
+        <div class="text-center md:text-right text-sm italic">
+            <p class="text-orange-400 font-bold">Created by Mark Jayson Sabater</p>
+            <p class="opacity-60">&copy; 2026 Developer Cheat Sheet. All rights reserved.</p>
+        </div>
+        
+    </div>
+</footer>
+</body>
+
+
+</html>
